@@ -1,0 +1,29 @@
+{
+  "name": "afrooz-web-test-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:tailwind": "tailwind build -i styles/globals.css -o styles/tailwind.css"
+  },
+  "dependencies": {
+    "next": "12.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-player": "^2.9.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.1",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
+    "video.js": "^7.15.4"
+  }
+}
