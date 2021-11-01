@@ -16,7 +16,7 @@ const SecondSection = () => {
       <div className="border-l-4 border-blue-300 h-32 inline-block mt-11"></div>
       <div className="mt-11">
         <div className="relative right-80 bottom-0">
-          <Image src="/img/manWithSurfboard.png" width={640} height={380} alt="man with surfing board"/>
+          <Image src="/img/manWithSurfBoard.png" width={640} height={380} alt="man with surfing board"/>
         </div>
 
         <div className="relative video bottom-80 w-max ml-96 left-72">
