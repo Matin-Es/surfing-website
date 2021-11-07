@@ -1,11 +1,11 @@
 import Header from "../src/components/Header";
-import FirstSection from "./../src/components/FirstSection";
-import SecondSection from "./../src/components/SecondSection";
-import ThirdSection from './../src/components/ThirdSection';
-import FourthSection from './../src/components/FourthSection';
-import FifthSection from './../src/components/FifthSection';
-import SixthSection from './../src/components/SixthSection';
-import SeventhSection from './../src/components/SeventhSection';
+import FirstSection from "./../src/components/HeadSlider";
+import SecondSection from "../src/components/VideoSection";
+import ThirdSection from './../src/components/ProductsSection';
+import FourthSection from '../src/components/BlogOne';
+import FifthSection from '../src/components/BlogTwo';
+import SixthSection from '../src/components/JoinTheClub';
+import SeventhSection from '../src/components/AddressSection';
 import Footer from './../src/components/Footer';
 
 export default function Home() {

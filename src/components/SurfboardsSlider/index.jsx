@@ -12,9 +12,10 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "gray",
-        borderRadius: "100%",
-        border: "0px",
+        color: "transparent",
+        width: "20px",
+        height: "20px",
+        backgroundRepeat: "no-repeat",
       }}
       onClick={onClick}
     />
@@ -30,9 +31,10 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "gray",
-        borderRadius: "100%",
-        border: "0px",
+        color: "transparent",
+        width: "20px",
+        height: "20px",
+        backgroundRepeat: "no-repeat",
       }}
       onClick={onClick}
     />
@@ -54,17 +56,20 @@ var settings = {
 };
 const SurfboardsSlider = () => {
   return (
-
     //it wraps cards and shows them in a slider
     <Slider {...settings}>
-
-       {/* gets data from fake db and maps it through elements  */}
+      {/* gets data from fake db and maps it through elements  */}
       {SurfboardCardData.map((card) => {
         return (
           <div className="w-64 mx-24" key={card._id}>
             <div className="bg-gray-200 w-64 h-80 mt-44">
               <div className="relative bottom-28">
-                <Image src={card.image} width={123} height={412} alt={card.alt} />
+                <Image
+                  src={card.image}
+                  width={123}
+                  height={412}
+                  alt={card.alt}
+                />
               </div>
               <div className="relative bottom-80 left-52">
                 <div>

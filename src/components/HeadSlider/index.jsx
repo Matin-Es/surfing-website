@@ -1,4 +1,4 @@
-import { SliderData } from './../../data/SliderData';
+import { SliderData } from '../../data/SliderData';
 import Image from "next/image";
 import SliderImage from "../Slider";
 const FirstSection = () => {

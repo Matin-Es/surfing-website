@@ -31,11 +31,8 @@
     opacity: 0;
     transition-duration: 1s ease;
     box-shadow: -5px -10px 30px 0.1px rgb(184, 184, 184);
-
-    
-    
-
 }
+
 .slide.active{
     opacity: 1;
     transition-duration: 1s;
@@ -45,3 +42,22 @@
 .video{
     box-shadow: -5px -10px 60px 0.1px rgb(184, 184, 184);
 }
+
+.slick-prev:before {
+    content: "<";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    right: 101%;
+    cursor: pointer;
+  }
+  .slick-next:before {
+    content: ">";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    left: 101%;
+    cursor: pointer;
+  }

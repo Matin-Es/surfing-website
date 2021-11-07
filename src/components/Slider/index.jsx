@@ -1,7 +1,6 @@
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 import { useState, useEffect } from "react";
 import { SliderData } from "../../data/SliderData";
-import { useCallback } from "react";
 import Image from "next/image";
 
 //Slider component
@@ -40,12 +39,20 @@ const SliderImage = ({ slides }) => {
   });
   return (
     <section className="slider relative left-32 top-0">
-      <VscChevronLeft className="left-arrow" onClick={prevSlide} />
+      <div className="opacity-10">
+        <VscChevronLeft className="left-arrow" onClick={prevSlide} />
+      </div>
+
       <div className="text-blue-400 inline-flex font-semibold absolute top-96 mt-72 -left-56 ">
         {current}
-        <div className="text-gray-700">/{slides.length - 1}</div>
+        <div className="text-gray-700">
+          <span className="opacity-10 mx-1">/</span>
+          {slides.length - 1}
+        </div>
       </div>
-      <VscChevronRight className="right-arrow" onClick={nextSlide} />
+      <div className="opacity-10">
+        <VscChevronRight className="right-arrow" onClick={nextSlide} />
+      </div>
 
       {/* gets data from fake db and maps it through elements  */}
       {SliderData.map((slide, index) => {

@@ -1,15 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import ArticleTitle from "../ArticleTitle";
 const FourthSection = () => {
   return (
     <div className="container mx-auto text-center flex mt-60 relative left-28">
       <div className="mr-20">
-        <div>
-          <h2 className="font-PlayfairBold text-5xl font-semibold text-left">
-            SurfTraining
-          </h2>
-          <div className="border-b-4 mb-2 border-blue-400 w-5 text-left mt-2"></div>
-        </div>
+        <ArticleTitle title="SurfTraining" />
         <div className="text-left font-Poppins text-gray-500 mt-10">
           <p>By better understanding the various aspects of</p>
           <p>surfing, By better understanding the various</p>

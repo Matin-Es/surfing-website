@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ArticleTitle from "../ArticleTitle";
 
 const FifthSection = () => {
   return (
@@ -19,12 +20,7 @@ const FifthSection = () => {
         />
       </div>
       <div className="relative right-10 mt-32">
-        <div>
-          <h2 className="font-PlayfairBold text-5xl font-semibold text-left">
-            Point Break
-          </h2>
-          <div className="border-b-4 mb-2 border-blue-400 w-5 text-left mt-2"></div>
-        </div>
+        <ArticleTitle title="Point Break" />
         <div className="text-left font-Poppins text-gray-500 mt-10">
           <p>By better understanding the various aspects of</p>
           <p>By better understanding the various aspects of</p>
